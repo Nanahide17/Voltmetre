@@ -5,12 +5,15 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../Core/cpp/Potentiometre.cpp \
 ../Core/cpp/main_cpp.cpp 
 
 OBJS += \
+./Core/cpp/Potentiometre.o \
 ./Core/cpp/main_cpp.o 
 
 CPP_DEPS += \
+./Core/cpp/Potentiometre.d \
 ./Core/cpp/main_cpp.d 
 
 
@@ -21,7 +24,7 @@ Core/cpp/%.o Core/cpp/%.su Core/cpp/%.cyclo: ../Core/cpp/%.cpp Core/cpp/subdir.m
 clean: clean-Core-2f-cpp
 
 clean-Core-2f-cpp:
-	-$(RM) ./Core/cpp/main_cpp.cyclo ./Core/cpp/main_cpp.d ./Core/cpp/main_cpp.o ./Core/cpp/main_cpp.su
+	-$(RM) ./Core/cpp/Potentiometre.cyclo ./Core/cpp/Potentiometre.d ./Core/cpp/Potentiometre.o ./Core/cpp/Potentiometre.su ./Core/cpp/main_cpp.cyclo ./Core/cpp/main_cpp.d ./Core/cpp/main_cpp.o ./Core/cpp/main_cpp.su
 
 .PHONY: clean-Core-2f-cpp
 
