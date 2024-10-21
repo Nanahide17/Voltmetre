@@ -15,6 +15,7 @@ void main_cpp(ADC_HandleTypeDef *hadc){
 
 
 	while(1){
+		HAL_ADC_Start(hadc);
 		potar.getADC(hadc);
 		voltage=potar.getVolt();
 		HAL_Delay(500);
