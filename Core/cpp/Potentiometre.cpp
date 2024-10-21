@@ -11,6 +11,6 @@ int Potentiometre::getData(void){
 	return volt;
 }
 
-void Potentiometre::getVoltage(int volt, ADC_HandleTypeDef *hadc){
-	volt=HAL_ADC_GetValue(hadc);
+void Potentiometre::getVoltage(ADC_HandleTypeDef *hadc){
+	this->volt=HAL_ADC_GetValue(hadc);
 }

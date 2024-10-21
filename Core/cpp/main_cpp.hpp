@@ -17,7 +17,7 @@ extern "C"{
 #include "main_cpp.hpp"
 #include "stm32l1xx_hal.h"
 #include "main.h"
-void main_cpp(void);
+void main_cpp(ADC_HandleTypeDef *hadc);
 
 #ifdef __cplusplus
 }
@@ -27,7 +27,7 @@ void main_cpp(void);
 #ifdef __cplusplus
 // ICI se trouve le code C++
 #include <iostream>
-
+#include "Potentiometre.hpp"
 class Voltmetre{
 
 };

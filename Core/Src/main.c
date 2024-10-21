@@ -94,7 +94,7 @@ int main(void)
   MX_ADC_Init();
   MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
-  main_cpp();
+  main_cpp(&hadc);
   /* USER CODE END 2 */
 
   /* Infinite loop */

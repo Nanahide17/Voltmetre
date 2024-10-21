@@ -27,7 +27,8 @@ Core/cpp/main_cpp.o: ../Core/cpp/main_cpp.cpp ../Core/cpp/main_cpp.hpp \
  ../Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_spi.h \
  ../Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_exti.h \
  ../Core/Inc/main.h \
- C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Core/cpp/main_cpp.hpp
+ C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Core/cpp/main_cpp.hpp \
+ ../Core/cpp/Potentiometre.hpp
 ../Core/cpp/main_cpp.hpp:
 ../Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal.h:
 ../Core/Inc/stm32l1xx_hal_conf.h:
@@ -58,3 +59,4 @@ Core/cpp/main_cpp.o: ../Core/cpp/main_cpp.cpp ../Core/cpp/main_cpp.hpp \
 ../Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_exti.h:
 ../Core/Inc/main.h:
 C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Core/cpp/main_cpp.hpp:
+../Core/cpp/Potentiometre.hpp:
