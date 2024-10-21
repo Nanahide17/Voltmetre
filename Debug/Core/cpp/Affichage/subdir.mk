@@ -5,14 +5,17 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../Core/cpp/Affichage/7segm.cpp \
 ../Core/cpp/Affichage/Affichage.cpp \
 ../Core/cpp/Affichage/Terminal.cpp 
 
 OBJS += \
+./Core/cpp/Affichage/7segm.o \
 ./Core/cpp/Affichage/Affichage.o \
 ./Core/cpp/Affichage/Terminal.o 
 
 CPP_DEPS += \
+./Core/cpp/Affichage/7segm.d \
 ./Core/cpp/Affichage/Affichage.d \
 ./Core/cpp/Affichage/Terminal.d 
 
@@ -24,7 +27,7 @@ Core/cpp/Affichage/%.o Core/cpp/Affichage/%.su Core/cpp/Affichage/%.cyclo: ../Co
 clean: clean-Core-2f-cpp-2f-Affichage
 
 clean-Core-2f-cpp-2f-Affichage:
-	-$(RM) ./Core/cpp/Affichage/Affichage.cyclo ./Core/cpp/Affichage/Affichage.d ./Core/cpp/Affichage/Affichage.o ./Core/cpp/Affichage/Affichage.su ./Core/cpp/Affichage/Terminal.cyclo ./Core/cpp/Affichage/Terminal.d ./Core/cpp/Affichage/Terminal.o ./Core/cpp/Affichage/Terminal.su
+	-$(RM) ./Core/cpp/Affichage/7segm.cyclo ./Core/cpp/Affichage/7segm.d ./Core/cpp/Affichage/7segm.o ./Core/cpp/Affichage/7segm.su ./Core/cpp/Affichage/Affichage.cyclo ./Core/cpp/Affichage/Affichage.d ./Core/cpp/Affichage/Affichage.o ./Core/cpp/Affichage/Affichage.su ./Core/cpp/Affichage/Terminal.cyclo ./Core/cpp/Affichage/Terminal.d ./Core/cpp/Affichage/Terminal.o ./Core/cpp/Affichage/Terminal.su
 
 .PHONY: clean-Core-2f-cpp-2f-Affichage
 

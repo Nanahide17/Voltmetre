@@ -5,6 +5,7 @@
 "./Core/Src/sysmem.o"
 "./Core/Src/system_stm32l1xx.o"
 "./Core/Startup/startup_stm32l152retx.o"
+"./Core/cpp/Affichage/7segm.o"
 "./Core/cpp/Affichage/Affichage.o"
 "./Core/cpp/Affichage/Terminal.o"
 "./Core/cpp/Bouton.o"

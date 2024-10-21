@@ -1,5 +1,5 @@
 /*
- * Affichage.hpp
+ * Terminal.hpp
  *
  *  Created on: Oct 21, 2024
  *      Author: Xourel
