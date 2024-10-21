@@ -28,8 +28,10 @@ Core/cpp/Bouton.o: ../Core/cpp/Bouton.cpp ../Core/cpp/Bouton.hpp \
  ../Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_spi.h \
  ../Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_exti.h \
  ../Core/Inc/main.h \
- C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Core/cpp/main_cpp.hpp \
- ../Core/cpp/Potentiometre.hpp
+ D:/Documents/Etude/prepa\ isen/5eme_annee/POO/voltmetre/Core/cpp/main_cpp.hpp \
+ ../Core/cpp/Potentiometre.hpp \
+ D:/Documents/Etude/prepa\ isen/5eme_annee/POO/voltmetre/Core/cpp/Affichage/Terminal.hpp \
+ D:/Documents/Etude/prepa\ isen/5eme_annee/POO/voltmetre/Core/cpp/Affichage/Affichage.hpp
 ../Core/cpp/Bouton.hpp:
 ../Core/cpp/main_cpp.hpp:
 ../Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal.h:
@@ -60,5 +62,7 @@ Core/cpp/Bouton.o: ../Core/cpp/Bouton.cpp ../Core/cpp/Bouton.hpp \
 ../Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_spi.h:
 ../Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_exti.h:
 ../Core/Inc/main.h:
-C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Core/cpp/main_cpp.hpp:
+D:/Documents/Etude/prepa\ isen/5eme_annee/POO/voltmetre/Core/cpp/main_cpp.hpp:
 ../Core/cpp/Potentiometre.hpp:
+D:/Documents/Etude/prepa\ isen/5eme_annee/POO/voltmetre/Core/cpp/Affichage/Terminal.hpp:
+D:/Documents/Etude/prepa\ isen/5eme_annee/POO/voltmetre/Core/cpp/Affichage/Affichage.hpp:

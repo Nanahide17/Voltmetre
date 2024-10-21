@@ -1,3 +1,6 @@
 # STM32CubeIDE
 .metadata/
 .settings/
+
+*.o
+*.md

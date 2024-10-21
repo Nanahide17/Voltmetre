@@ -10,6 +10,7 @@
 
 void main_cpp(ADC_HandleTypeDef *hadc){
 	Potentiometre potar;
+	Terminal term;
 	float voltage=0.0;
 
 
@@ -18,6 +19,7 @@ void main_cpp(ADC_HandleTypeDef *hadc){
 		HAL_ADC_Start(hadc);
 		potar.getADC(hadc);
 		voltage=potar.getVolt();
+		term.show(voltage);
 		HAL_Delay(500);
 	}
 
