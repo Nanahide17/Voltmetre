@@ -13,7 +13,7 @@
 class Potentiometre{
 public :
 	int getData(void);
-	void getVoltage(int volt);
+	void getVoltage(int volt, ADC_HandleTypeDef *hadc);
 
 private :
 	int volt;
