@@ -59,6 +59,8 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define RV1_Pin GPIO_PIN_0
 #define RV1_GPIO_Port GPIOA
+#define BTN1_Pin GPIO_PIN_11
+#define BTN1_GPIO_Port GPIOA
 
 /* USER CODE BEGIN Private defines */
 

@@ -38,9 +38,9 @@ CPP_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
-Core/MAX7219-master \
 Core/Src \
 Core/Startup \
 Core/cpp \
+Drivers/MAX7219-master \
 Drivers/STM32L1xx_HAL_Driver/Src \
 
