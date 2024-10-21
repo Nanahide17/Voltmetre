@@ -27,11 +27,7 @@ void main_cpp(ADC_HandleTypeDef *hadc);
 #ifdef __cplusplus
 // ICI se trouve le code C++
 #include <iostream>
-#include "Potentiometre.hpp"
-#include "Terminal.hpp"
-class Voltmetre{
-
-};
+#include "Voltmetre.hpp"
 
 
 #endif

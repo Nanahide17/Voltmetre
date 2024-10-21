@@ -1,5 +1,6 @@
-Core/cpp/Affichage/Terminal.o: ../Core/cpp/Affichage/Terminal.cpp \
- ../Core/cpp/Affichage/Terminal.hpp \
+Core/cpp/Peripherique/Potentiometre.o: \
+ ../Core/cpp/Peripherique/Potentiometre.cpp \
+ ../Core/cpp/Peripherique/Potentiometre.hpp \
  C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Core/cpp/main_cpp.hpp \
  C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Core/cpp/main_cpp.hpp \
  ../Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal.h \
@@ -32,9 +33,8 @@ Core/cpp/Affichage/Terminal.o: ../Core/cpp/Affichage/Terminal.cpp \
  ../Core/Inc/main.h \
  C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Core/cpp/Voltmetre.hpp \
  C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Core/cpp/Peripherique/Potentiometre.hpp \
- C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Core/cpp/Peripherique/Bouton.hpp \
- ../Core/cpp/Affichage/Affichage.hpp
-../Core/cpp/Affichage/Terminal.hpp:
+ C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Core/cpp/Peripherique/Bouton.hpp
+../Core/cpp/Peripherique/Potentiometre.hpp:
 C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Core/cpp/main_cpp.hpp:
 C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Core/cpp/main_cpp.hpp:
 ../Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal.h:
@@ -68,4 +68,3 @@ C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Core/cpp/main_cpp.hpp:
 C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Core/cpp/Voltmetre.hpp:
 C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Core/cpp/Peripherique/Potentiometre.hpp:
 C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Core/cpp/Peripherique/Bouton.hpp:
-../Core/cpp/Affichage/Affichage.hpp:

@@ -16,7 +16,7 @@ void Bouton::HAL_GPIO_EXTI_Callback(uint16_t btn){
 		}
 		if(this->flag==1){
 			HAL_ResumeTick();
-			HAL_SYSTICK_Config(32);
+			SystemClock_Config();
 		}
 
 	}
