@@ -21,7 +21,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "stdio.h"
+#include "stdlib.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -59,7 +60,10 @@ static void MX_SPI1_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+int __io_putchar(int ch){
+	ITM_SendChar(ch);
+	return ch;
+}
 /* USER CODE END 0 */
 
 /**
@@ -94,6 +98,7 @@ int main(void)
   MX_ADC_Init();
   MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
+  printf("Raaaaaaagnar\n");
   main_cpp(&hadc);
   /* USER CODE END 2 */
 

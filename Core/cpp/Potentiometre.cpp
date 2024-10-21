@@ -7,10 +7,14 @@
 
 #include "Potentiometre.hpp"
 
-int Potentiometre::getData(void){
+float Potentiometre::getVolt(void){
+	this->volt=(this->adc/4095)*3.3;
 	return volt;
 }
 
-void Potentiometre::getVoltage(ADC_HandleTypeDef *hadc){
-	this->volt=HAL_ADC_GetValue(hadc);
+void Potentiometre::getADC(ADC_HandleTypeDef *hadc){
+	HAL_ADC_Start(hadc);
+	this->adc=HAL_ADC_GetValue(hadc);
+	HAL_ADC_Stop(hadc);
 }
+

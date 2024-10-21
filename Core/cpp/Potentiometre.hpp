@@ -12,11 +12,11 @@
 
 class Potentiometre{
 public :
-	int getData(void);
-	void getVoltage(ADC_HandleTypeDef *hadc);
-
+	float getVolt(void);
+	void getADC(ADC_HandleTypeDef *hadc);
 private :
-	int volt;
+	int adc;
+	float volt=0.0;
 };
 
 
