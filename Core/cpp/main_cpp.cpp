@@ -7,9 +7,10 @@
 
 #include "main_cpp.hpp"
 
+extern ADC_HandleTypeDef hadc;
 
-void main_cpp(ADC_HandleTypeDef *hadc){
+void main_cpp(){
 	Voltmetre voltmetre;
-	voltmetre.voltmetre(hadc);
+	voltmetre.voltmetre(&hadc);
 
 }

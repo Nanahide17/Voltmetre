@@ -13,7 +13,7 @@
 
 class Terminal : Affichage{
 public :
-	void show(float volt);
+	void show(float data);
 };
 
 

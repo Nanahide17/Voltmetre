@@ -17,7 +17,9 @@ extern "C"{
 #include "main_cpp.hpp"
 #include "stm32l1xx_hal.h"
 #include "main.h"
-void main_cpp(ADC_HandleTypeDef *hadc);
+
+
+void main_cpp();
 
 #ifdef __cplusplus
 }

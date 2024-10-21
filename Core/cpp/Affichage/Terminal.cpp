@@ -1,5 +1,5 @@
 #include "Terminal.hpp"
 
-void Terminal :: show(float volt){
-	std::cout << "Voltage :" << volt << std::endl;
+void Terminal :: show(float data){
+	std::cout << "Voltage :" << data << std::endl;
 }

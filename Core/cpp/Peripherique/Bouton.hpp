@@ -8,6 +8,7 @@
 #ifndef CPP_BOUTON_HPP_
 #define CPP_BOUTON_HPP_
 
+#ifdef __cplusplus
 #include "main_cpp.hpp"
 
 class Bouton{
@@ -17,7 +18,7 @@ public :
 private :
 	int flag=0;
 };
-
+#endif
 
 
 #endif /* CPP_BOUTON_HPP_ */

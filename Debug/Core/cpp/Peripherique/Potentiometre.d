@@ -33,7 +33,11 @@ Core/cpp/Peripherique/Potentiometre.o: \
  ../Core/Inc/main.h \
  C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Core/cpp/Voltmetre.hpp \
  C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Core/cpp/Peripherique/Potentiometre.hpp \
- C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Core/cpp/Peripherique/Bouton.hpp
+ C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Core/cpp/Peripherique/Bouton.hpp \
+ C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Core/cpp/Affichage/Affichage.hpp \
+ C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Core/cpp/Affichage/7segment.hpp \
+ C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Drivers/MAX7219-master/max7219.h \
+ C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Core/cpp/Affichage/Affichage.hpp
 ../Core/cpp/Peripherique/Potentiometre.hpp:
 C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Core/cpp/main_cpp.hpp:
 C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Core/cpp/main_cpp.hpp:
@@ -68,3 +72,7 @@ C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Core/cpp/main_cpp.hpp:
 C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Core/cpp/Voltmetre.hpp:
 C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Core/cpp/Peripherique/Potentiometre.hpp:
 C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Core/cpp/Peripherique/Bouton.hpp:
+C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Core/cpp/Affichage/Affichage.hpp:
+C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Core/cpp/Affichage/7segment.hpp:
+C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Drivers/MAX7219-master/max7219.h:
+C:/Users/anahi/STM32CubeIDE/workspace_1.14.0/voltmetre/Core/cpp/Affichage/Affichage.hpp:

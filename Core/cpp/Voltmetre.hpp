@@ -11,11 +11,13 @@
 #include "main_cpp.hpp"
 #include "Peripherique/Potentiometre.hpp"
 #include "Peripherique/Bouton.hpp"
+#include "Affichage/Affichage.hpp"
+#include "Affichage/7segment.hpp"
 
 class Voltmetre {
 public :
 	void voltmetre(ADC_HandleTypeDef *hadc);
-	float getData();
+//	float getData();
 
 private :
 	float volt;

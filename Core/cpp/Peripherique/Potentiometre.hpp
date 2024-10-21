@@ -8,6 +8,7 @@
 #ifndef CPP_POTENTIOMETRE_HPP_
 #define CPP_POTENTIOMETRE_HPP_
 
+#ifdef __cplusplus
 #include "main_cpp.hpp"
 
 class Potentiometre{
@@ -18,7 +19,7 @@ private :
 	int adc;
 	float volt=0.0;
 };
-
+#endif
 
 
 #endif /* CPP_POTENTIOMETRE_HPP_ */
