@@ -14,8 +14,12 @@ extern "C"{
 // ICI SE TROUVE LE CODE C
 
 #include <stdio.h>
+#include "main_cpp.hpp"
 #include "stm32l1xx_hal.h"
-void main_cpp(ADC_HandleTypeDef *hadc);
+#include "main.h"
+
+
+void main_cpp();
 
 #ifdef __cplusplus
 }
@@ -25,12 +29,7 @@ void main_cpp(ADC_HandleTypeDef *hadc);
 #ifdef __cplusplus
 // ICI se trouve le code C++
 #include <iostream>
-#include "Potentiometre.hpp"
-#include "Terminal.hpp"
-#include "7segm.hpp"
-class Voltmetre{
-
-};
+#include "Voltmetre.hpp"
 
 
 #endif

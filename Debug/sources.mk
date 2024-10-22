@@ -41,6 +41,7 @@ SUBDIRS := \
 Core/Src \
 Core/Startup \
 Core/cpp/Affichage \
+Core/cpp/Peripherique \
 Core/cpp \
 Drivers/MAX7219-master \
 Drivers/STM32L1xx_HAL_Driver/Src \

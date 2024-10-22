@@ -1,5 +1,5 @@
 /*
- * Terminal.hpp
+ * Affichage.hpp
  *
  *  Created on: Oct 21, 2024
  *      Author: Xourel
@@ -11,9 +11,10 @@
 #include "main_cpp.hpp"
 #include "Affichage.hpp"
 
+//Création classe Terminal issu d'Affichage
 class Terminal : Affichage{
 public :
-	void show(float volt);
+	void show(float data);
 };
 
 

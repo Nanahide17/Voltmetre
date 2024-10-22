@@ -11,6 +11,7 @@ RM := rm -rf
 -include sources.mk
 -include Drivers/STM32L1xx_HAL_Driver/Src/subdir.mk
 -include Drivers/MAX7219-master/subdir.mk
+-include Core/cpp/Peripherique/subdir.mk
 -include Core/cpp/Affichage/subdir.mk
 -include Core/cpp/subdir.mk
 -include Core/Startup/subdir.mk
@@ -87,8 +88,8 @@ all: main-build
 main-build: voltmetre.elf secondary-outputs
 
 # Tool invocations
-voltmetre.elf voltmetre.map: $(OBJS) $(USER_OBJS) D:\Documents\Etude\prepa\ isen\5eme_annee\POO\voltmetre\STM32L152RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "voltmetre.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\Documents\Etude\prepa isen\5eme_annee\POO\voltmetre\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="voltmetre.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+voltmetre.elf voltmetre.map: $(OBJS) $(USER_OBJS) C:\Users\anahi\Documents\Cours\C++\Exercice\voltmetre\STM32L152RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "voltmetre.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\anahi\Documents\Cours\C++\Exercice\voltmetre\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="voltmetre.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

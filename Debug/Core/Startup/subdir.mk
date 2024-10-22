@@ -16,7 +16,7 @@ OBJS += \
 
 # Each subdirectory must supply rules for building sources it contributes
 Core/Startup/%.o: ../Core/Startup/%.s Core/Startup/subdir.mk
-	arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -DDEBUG -c -I"D:/Documents/Etude/prepa isen/5eme_annee/POO/voltmetre/Core/cpp" -I"D:/Documents/Etude/prepa isen/5eme_annee/POO/voltmetre/Drivers/MAX7219-master" -I"D:/Documents/Etude/prepa isen/5eme_annee/POO/voltmetre/Core/cpp/Affichage" -x assembler-with-cpp -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -DDEBUG -c -I"C:/Users/anahi/Documents/Cours/C++/Exercice/voltmetre/Core/cpp" -I"C:/Users/anahi/Documents/Cours/C++/Exercice/voltmetre/Drivers/MAX7219-master" -I"C:/Users/anahi/Documents/Cours/C++/Exercice/voltmetre/Core/cpp/Peripherique" -I"C:/Users/anahi/Documents/Cours/C++/Exercice/voltmetre/Core/cpp/Affichage" -I"C:/Users/anahi/Documents/Cours/C++/Exercice/voltmetre/Core" -I"C:/Users/anahi/Documents/Cours/C++/Exercice/voltmetre/Drivers" -I"C:/Users/anahi/Documents/Cours/C++/Exercice/voltmetre/Debug" -x assembler-with-cpp -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@" "$<"
 
 clean: clean-Core-2f-Startup
 
