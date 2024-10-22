@@ -88,8 +88,8 @@ all: main-build
 main-build: voltmetre.elf secondary-outputs
 
 # Tool invocations
-voltmetre.elf voltmetre.map: $(OBJS) $(USER_OBJS) C:\Users\anahi\STM32CubeIDE\workspace_1.14.0\voltmetre\STM32L152RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "voltmetre.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\anahi\STM32CubeIDE\workspace_1.14.0\voltmetre\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="voltmetre.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+voltmetre.elf voltmetre.map: $(OBJS) $(USER_OBJS) C:\Users\anahi\Documents\Cours\C++\Exercice\voltmetre\STM32L152RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "voltmetre.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\anahi\Documents\Cours\C++\Exercice\voltmetre\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="voltmetre.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

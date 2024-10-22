@@ -9,10 +9,22 @@
 #define CPP_AFFICHAGE_7SEGMENT_HPP_
 
 #ifdef __cplusplus
-#include "main_cpp.hpp"
+extern "C" {
+
+#endif
+
+/* BEGIN USER CODE C DEFINITIONS */
+
 #include "max7219.h"
+
+/* END USER CODE C DEFINITIONS */
+
+#ifdef __cplusplus
+
+}
+#include "main_cpp.hpp"
 #include "Affichage.hpp"
-#include <cstring>
+#include <cmath>
 
 extern SPI_HandleTypeDef hspi1;
 
@@ -36,7 +48,6 @@ private :
 	MAX7219_Handle_TypeDef max7219_handle;
 	HAL_StatusTypeDef max7219_status;
 	int tab[4];
-	char nombres[4];
 	uint8_t code[20]={0b1111110, //0.
 			0b10110000, //1.
 			0b11101101, //2.
@@ -51,7 +62,7 @@ private :
 			0b00110000, //1
 			0b01101101, //2
 			0b01111001, //3
-			0b10110011, //4
+			0b00110011, //4
 			0b01011011, //5
 			0b01011111, //6
 			0b01110000, //7

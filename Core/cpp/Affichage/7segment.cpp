@@ -8,9 +8,15 @@
 #include "7segment.hpp"
 
 void Segments::show(float data){
-	std::memcpy(this->nombres, &data, sizeof(data));
-	for(int i=0; i<4;i++){
-		this->tab[i]=static_cast<int>(this->nombres[i]);
+	int entier = static_cast<int>(data);
+	float decimal = std::fabs(data) - std::fabs(entier);
+
+	tab[0] = entier == 0 ? 0 : std::abs(entier % 10);
+
+	for (int i = 1; i < 4; i++) {
+		decimal *= 10;
+		int digit = static_cast<int>(std::floor(decimal)) % 10;
+		this->tab[i] = digit;
 	}
 
 	this->max7219_status=max7219_erase_no_decode();

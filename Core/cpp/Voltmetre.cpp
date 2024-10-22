@@ -11,13 +11,14 @@
 void Voltmetre::voltmetre(ADC_HandleTypeDef *hadc){
 	Potentiometre potentiometre;
 	Bouton bouton;
-//	Segments affichage;
-
-	HAL_ADC_Start(hadc);
-	potentiometre.getADC(hadc);
-	this->volt=potentiometre.getVolt();
-
-
+	Segments affichage;
+	while(1){
+		HAL_ADC_Start(hadc);
+		potentiometre.getADC(hadc);
+		this->volt=potentiometre.getVolt();
+		affichage.show(this->volt);
+		HAL_Delay(500);
+	}
 }
 
 //float Voltmetre::getData(){
