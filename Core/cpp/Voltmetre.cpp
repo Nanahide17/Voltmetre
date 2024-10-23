@@ -18,7 +18,10 @@ void Voltmetre::voltmetre(ADC_HandleTypeDef *hadc){
 		potentiometre.getADC(hadc);
 		this->volt=potentiometre.getVolt();
 		affichage.show(this->volt);
-		HAL_Delay(500);
+		this->temps = HAL_GetTick();
+		while(HAL_GetTick()-this->temps<500){
+			continue;
+		}
 	}
 }
 

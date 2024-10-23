@@ -22,6 +22,7 @@ public :
 
 private :
 	float volt;
+	uint32_t temps;
 };
 
 

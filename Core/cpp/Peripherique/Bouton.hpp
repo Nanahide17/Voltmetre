@@ -9,6 +9,7 @@
 #define CPP_BOUTON_HPP_
 
 #ifdef __cplusplus
+
 #include "main_cpp.hpp"
 
 //Création de la classe Bouton
