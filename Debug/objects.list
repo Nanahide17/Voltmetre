@@ -7,7 +7,6 @@
 "./Core/Startup/startup_stm32l152retx.o"
 "./Core/cpp/Affichage/7segment.o"
 "./Core/cpp/Affichage/Terminal.o"
-"./Core/cpp/Peripherique/Bouton.o"
 "./Core/cpp/Peripherique/Potentiometre.o"
 "./Core/cpp/Voltmetre.o"
 "./Core/cpp/main_cpp.o"

@@ -20,6 +20,7 @@ extern "C"{
 
 
 void main_cpp();
+void interrupt();
 
 #ifdef __cplusplus
 }

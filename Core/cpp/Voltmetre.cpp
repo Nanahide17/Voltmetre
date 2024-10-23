@@ -11,15 +11,14 @@
 void Voltmetre::voltmetre(ADC_HandleTypeDef *hadc){
 	//Instanciation des classes nécéssaire pour le fonctionnement du voltmetre
 	Potentiometre potentiometre;
-	Bouton bouton;
 	Segments affichage;
 	while(1){
 		HAL_ADC_Start(hadc);
-		potentiometre.getADC(hadc);
-		this->volt=potentiometre.getVolt();
-		affichage.show(this->volt);
+		potentiometre.getADC(hadc);           //Récupération de la valeur ADC
+		this->volt=potentiometre.getVolt();   //Calcul de la valeur capté en volt
+		affichage.show(this->volt);           //Affichage (sur 7 segment)
 		this->temps = HAL_GetTick();
-		while(HAL_GetTick()-this->temps<500){
+		while(HAL_GetTick()-this->temps<500){ //Permet d'attendre 500ms
 			continue;
 		}
 	}

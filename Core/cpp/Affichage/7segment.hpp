@@ -22,7 +22,7 @@ extern "C" {
 #include "Affichage.hpp"
 #include <cmath>
 
-//Importation du SPI qui se situe dans le main
+//Importation du SPI qui se situe dans le main.c
 extern SPI_HandleTypeDef hspi1;
 
 //Crétaion classe Segment issu de Affichage

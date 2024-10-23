@@ -10,12 +10,13 @@
 //Permet l'affichage sur le 7 segment
 void Segments::show(float data){
 	//Récupération de la données et récupère les 4 premiers chiffres de ce nombre
-	int entier = static_cast<int>(data);
-	float decimal = std::fabs(data) - std::fabs(entier);
+	int entier = static_cast<int>(data);                            //Récupération de la partie entière (avant la virgule)
+	float decimal = std::fabs(data) - std::fabs(entier);            //Récupération de la partie décimal (après la virgule)
 
-	tab[0] = entier == 0 ? 0 : std::abs(entier % 10);
+	tab[0] = entier == 0 ? 0 : std::abs(entier % 10);               //Si le nombre entier est inférieur à 1, la partie entière doit être 0 puis on la stocke
 
 	for (int i = 1; i < 4; i++) {
+		//Traitement de la partie en déplacemnt la virgule puis en stockant le chiffre après la virgule
 		decimal *= 10;
 		int digit = static_cast<int>(std::floor(decimal)) % 10;
 		this->tab[i] = digit;

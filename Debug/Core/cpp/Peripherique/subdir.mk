@@ -5,15 +5,12 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../Core/cpp/Peripherique/Bouton.cpp \
 ../Core/cpp/Peripherique/Potentiometre.cpp 
 
 OBJS += \
-./Core/cpp/Peripherique/Bouton.o \
 ./Core/cpp/Peripherique/Potentiometre.o 
 
 CPP_DEPS += \
-./Core/cpp/Peripherique/Bouton.d \
 ./Core/cpp/Peripherique/Potentiometre.d 
 
 
@@ -24,7 +21,7 @@ Core/cpp/Peripherique/%.o Core/cpp/Peripherique/%.su Core/cpp/Peripherique/%.cyc
 clean: clean-Core-2f-cpp-2f-Peripherique
 
 clean-Core-2f-cpp-2f-Peripherique:
-	-$(RM) ./Core/cpp/Peripherique/Bouton.cyclo ./Core/cpp/Peripherique/Bouton.d ./Core/cpp/Peripherique/Bouton.o ./Core/cpp/Peripherique/Bouton.su ./Core/cpp/Peripherique/Potentiometre.cyclo ./Core/cpp/Peripherique/Potentiometre.d ./Core/cpp/Peripherique/Potentiometre.o ./Core/cpp/Peripherique/Potentiometre.su
+	-$(RM) ./Core/cpp/Peripherique/Potentiometre.cyclo ./Core/cpp/Peripherique/Potentiometre.d ./Core/cpp/Peripherique/Potentiometre.o ./Core/cpp/Peripherique/Potentiometre.su
 
 .PHONY: clean-Core-2f-cpp-2f-Peripherique
 

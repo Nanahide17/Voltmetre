@@ -288,6 +288,14 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 
+void HAL_GPIO_EXTI_Callback(uint16_t btn){
+	//Permet d'entrer et de sortir du stop mode
+	if(btn==BTN1_Pin){
+			interrupt(); //Appel de la fonction interrupt
+
+	}
+
+}
 /* USER CODE END 4 */
 
 /**
